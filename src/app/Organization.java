@@ -5,7 +5,9 @@ public class Organization {
     private boolean profitMaking;
 
     public void setName(String n) {
-        name = n;
+        if (n != "") {
+            name = n;
+        }
     }
 
     public String getName() {
