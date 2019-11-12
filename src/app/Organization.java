@@ -21,8 +21,8 @@ public class Organization {
     }
 
     public String display() {
-        return "\nOrganization name:\t" + getName() + "\n" + displayProfitMaking(getProfitMaking())
-                + displayTaxPayable(getProfitMaking()) + "\n---------------\n";
+        return "\nOrganization name:\t" + name + "\n" + displayProfitMaking(profitMaking)
+                + displayTaxPayable(profitMaking) + "\n---------------\n";
     }
 
     public String displayProfitMaking(boolean profitMaking) {
