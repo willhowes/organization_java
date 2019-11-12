@@ -5,11 +5,11 @@ public class UseOrganization {
 
     Organization myOrganization = new Organization();
     myOrganization.setName("Lovely Charity");
-    myOrganization.profitMaking = false;
+    myOrganization.setProfitMaking(false);
 
     Organization evilOrganization = new Organization();
     evilOrganization.setName("Evil Empire");
-    evilOrganization.profitMaking = true;
+    evilOrganization.setProfitMaking(true);
 
     System.out.print(myOrganization.display());
     System.out.print(evilOrganization.display());

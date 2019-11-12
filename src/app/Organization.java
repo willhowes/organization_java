@@ -1,8 +1,8 @@
 package app;
 
 public class Organization {
-    String name;
-    boolean profitMaking;
+    private String name;
+    private boolean profitMaking;
 
     public void setName(String n) {
         name = n;
@@ -12,9 +12,17 @@ public class Organization {
         return name;
     }
 
+    public void setProfitMaking(boolean p) {
+        profitMaking = p;
+    }
+
+    public boolean getProfitMaking() {
+        return profitMaking;
+    }
+
     public String display() {
-        return "\nOrganization name:\t" + getName() + "\n" + displayProfitMaking(profitMaking)
-                + displayTaxPayable(profitMaking) + "\n---------------\n";
+        return "\nOrganization name:\t" + getName() + "\n" + displayProfitMaking(getProfitMaking())
+                + displayTaxPayable(getProfitMaking()) + "\n---------------\n";
     }
 
     public String displayProfitMaking(boolean profitMaking) {
